@@ -34,7 +34,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%; /* Troque de 100vh para 100% */
-  background-image: url("imagens/Hero_luis_R (1).webp");
+  background-image: url("imagens/hero-luis-r.webp");
   background-size: cover;
   background-position: center; /* Centraliza a imagem por padrão */
   z-index: -2;
