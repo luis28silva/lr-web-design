@@ -1,82 +1,29 @@
-.modal.logo .modal-content {
-  background: #00ff2a;
-}
 
-.modal.site1 .modal-content {
-  background: #1900ff;
-}
-
-.projeto-modal h2 {
-  margin-bottom: 10px;
-}
-
-.projeto-modal p {
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
-
-.modal.site2 .modal-content {
-  background: #f0fff4;
-}
-
-.modal.site2 h2 {
-  color: #00a86b;
-}
-
-.modal.logo .modal-content {
-  background: #eef3ff;
-}
-
-.modal.site1 .modal-content {
-  background: #1900ff;
-}
-
-.projeto-modal h2 {
-  margin-bottom: 10px;
-}
-
-.projeto-modal p {
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
-
-.modal.site2 .modal-content {
-  background: #f0fff4;
-}
-
-.modal.site2 h2 {
-  color: #00a86b;
-}
-
-/* ----------------------------------------------- */
 /* Configuração padrão para as fotos do grid */
-.grid-projeto .item img {
+.grid-projeto-agenda .item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-/* ----------------------------------------------- */
-/* ESTLO DO CARD 1 */
-
-.grid-projeto {
+.grid-projeto-agenda {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
 /* altura das linhas */
-.grid-projeto .item {
-  min-height: 250px;
+.grid-projeto-agenda .item {
+  min-height: 280px;
 }
 
 /* linha de baixo (ocupando 2 colunas cada) */
-.i5 {
+.i3 {
   grid-column: span 2;
 }
 
-.i5 {
-  background: #ff0000; /* fundo leve */
+.i3 {
+  background: #000000; /* fundo leve */
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -84,25 +31,25 @@
   justify-content: center;
   text-align: justify;
 }
-.i5 p {
+.i3 p {
   max-width: 450px;
   font-size: 15px;
   line-height: 1.7;
-  color: #ffffff;
+  color: #2f00ff;
 }
 
-.i5 h2{
+.i3 h2{
     color: #ffffff;
     font-size: 24px;
     margin-bottom: 15px;
 }
 
-.i6 {
-  grid-column: span 2;
+.i4 {
+  grid-column: span 3;
 }
 
-.i6 {
-  background: #000000; /* fundo leve */
+.i4 {
+  background: #09ff32; /* fundo leve */
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -111,7 +58,14 @@
   text-align: justify;
   gap: 5px;
 }
-.i6 p {
+.i4 p {
+  max-width: 450px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+.i5 p {
   max-width: 450px;
   font-size: 15px;
   line-height: 1.7;
@@ -120,8 +74,9 @@
 
 /* ----------------------------------------------- */
 
+/*Agenda*/
 .modal.agenda .modal-content {
-  background: #ffa600;
+  background: #ff0077;
 }
 
 /* 📱 celular */

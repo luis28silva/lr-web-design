@@ -248,6 +248,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  object-fit: cover;
   transition: 0.4s;
   cursor: pointer;
 }
@@ -303,8 +304,8 @@ body {
 .site_2 {
   background-image: url(imagens/Galeria/site1.gif);
 }
-.site_3 {
-  background-image: url(imagens/Galeria/site2.jpg);
+.casinha {
+  background-image: url(imagens/Galeria/casinha-cia/casinha-1.png);
 }
 .site_4 {
   background-image: url(imagens/Galeria/site4.jpg);
