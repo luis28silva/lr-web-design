@@ -128,23 +128,16 @@
       <section class="secao painel" id="portfolio">
         <div class="painel-conteudo painel-portfolio">
           <div class="grid">
-            <div class="card site_1" data-id="site1" data-numero="01">
-              <video
-                autoplay
-                loop
-                muted
-                playsinline
-                style="width: 100%; height: 100%; object-fit: cover"
-              >
-                <source
-                  src="imagens/Galeria/krug/krug-3.mp4"
-                  type="video/mp4"
-                />
-                Seu navegador não suporta vídeos.
+
+            <div class="card biscoito-krug" data-id="biscoito-krug" data-numero="01">
+              <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover">
+                <source src="imagens/Galeria/krug/krug-3.mp4" type="video/mp4"/> Seu navegador não suporta vídeos.
               </video>
             </div>
+
             <div class="card logo" data-id="logo" data-numero="02"></div>
-            <div class="card site_2" data-id="site2" data-numero="03">
+
+            <div class="card site-unialcance" data-id="site-unialcance" data-numero="03">
               <video
                 autoplay
                 loop
@@ -153,21 +146,25 @@
                 style="width: 100%; height: 100%; object-fit: cover"
               >
                 <source
-                  src="imagens/Galeria/sire-unialcance/site-unialcance.mp4"
+                  src="imagens/Galeria/site-unialcance/site-unialcance.mp4"
                   type="video/mp4"
                 />
                 Seu navegador não suporta vídeos.
               </video>
+
             </div>
-            <div class="card alto embalagem" data-numero="04"></div>
-            <div class="card casinha" data-numero="05"></div>
+            <div class="card alto embalagem projeto-produtos-rodeio" data-id="produtos-rodeio" data-numero="04"></div>
+
+            <div class="card casinha casinha-presente" data-id="casinha-presente" data-numero="05"></div>
+            
             <div class="card alto landing" data-numero="06"></div>
             <div
               class="card sete agenda"
               data-id="agenda"
               data-numero="07"
             ></div>
-            <div class="card oito site_4" data-numero="08">
+
+            <div class="card oito site-daiana" data-id="site-daiana" data-numero="08">
               <video
                 autoplay
                 loop
@@ -191,205 +188,525 @@
       <p>Todos Direitos reservados &copy; 2026</p>
     </footer>
 
-    <section id="projeto-logo" class="projeto-modal logo">
+    <!-- MODAL CASINHA PRESENTE -->
+    <section id="projeto-casinha-presente" class="projeto-modal casinha-presente">
       <div class="grid-projeto">
-        <div class="item i1">1</div>
-        <div class="item i2">2</div>
-        <div class="item i3">3</div>
-        <div class="item i4">4</div>
-        <div class="item i5">5</div>
-        <div class="item i6">6</div>
-      </div>
-    </section>
-
-    <section id="projeto-site1" class="projeto-modal site1">
-      <header>
-        <h2>Site Institucional</h2>
-        <p class="intro">Projeto focado em experiência e design moderno</p>
-      </header>
-
-      <img src="img1.jpg" />
-
-      <p>O objetivo foi criar um layout limpo e funcional...</p>
-
-      <img src="img2.jpg" />
-
-      <p>Foram utilizados conceitos de hierarquia visual...</p>
-    </section>
-
-    <section id="projeto-site2" class="projeto-modal site2">
-      <header>
-        <h2>Projeto Site 2</h2>
-      </header>
-
-      <p>
-        Este projeto foi uma landing page focada em conversão, com design
-        moderno e navegação simples.
-      </p>
-
-      <img src="imagens/Galeria/site2.jpg" alt="" />
-
-      <footer>
-        <p>Tecnologias utilizadas:</p>
-
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-      </footer>
-    </section>
-
-    <section id="projeto-agenda" class="projeto-modal agenda">
-      <div class="grid-projeto-agenda">
-        <div class="item i1">
+        <!-- ESQUERDA: Foto -->
+        <div class="proj-foto">
           <img
-            src="imagens/Galeria/agenda/agenda-1.webp"
-            alt="foto agenda da Unialcance"
+            src="imagens/Galeria/casinha-cia/casinha-presente2.webp"
+            alt="casinha-presente"
           />
         </div>
-        <div class="item i2">
-          <img
-            src="imagens/Galeria/agenda/agenda-2.webp"
-            alt="foto agenda da Unialcance"
-          />
-        </div>
-        <div class="item i3">
-          <h2>Agenda Unialcance - Ferramentas utilizadas</h2>
 
-          <div class="container-ferramentas">
-            <div class="linha-ferramentas">
-              <div class="bloco-ferramenta">
-                <i class="fa-regular fa-image"></i>
-                <h4>PHOTOSHOP</h4>
-                <p>Tratamento de imagens e mockups.</p>
-              </div>
+        <!-- DIREITA: Informações -->
+        <div class="proj-info tema-cyan">
+          <div class="proj-cabecalho">
+            <h2>Casinha Presente</h2>
+            <p class="proj-subtitulo"> Design de Embalagem Cartonada · Caixa e Cia</p>
+          </div>
 
-              <div class="bloco-ferramenta">
-                <i class="fa-regular fa-pen-to-square"></i>
-                <h4>CORELDRAW</h4>
-                <p>Desenvolvimento da arte vetorial.</p>
-              </div>
+          <h3 class="proj-titulo-secao">PROCESSO CRIATIVO</h3>
 
-              <div class="bloco-ferramenta">
+          <div class="proj-etapas">
+            <div class="etapa-item">
+              <div class="circulo-etapa">
                 <i class="fa-regular fa-lightbulb"></i>
-                <h4>ILLUSTRATOR</h4>
-                <p>Elementos gráficos e acabamentos.</p>
+              </div>
+              <div class="info-etapa">
+                <h4>01. BRIEFING</h4>
+                <p>
+                  Desenvolvimento de embalagem cartonada personalizada, com projeto técnico completo e acabamentos nobres para presentear com sofisticação.
+                </p>
               </div>
             </div>
 
-            <hr class="linha-divisoria" />
-
-            <div class="linha-processos">
-              <div class="bloco-processo">
-                <i class="fa-regular fa-newspaper"></i>
-                <div class="texto-processo">
-                  <h4>DIAGRAMAÇÃO</h4>
-                  <p>Páginas internas e capa.</p>
-                </div>
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-pen-to-square"></i>
               </div>
-
-              <div class="bloco-processo">
-                <i class="fa-regular fa-compass"></i>
-                <div class="texto-processo">
-                  <h4>PRÉ-IMPRESSÃO</h4>
-                  <p>Ajustes de cor e preparação.</p>
-                </div>
+              <div class="info-etapa">
+                <h4>02. DESENHO TÉCNICO</h4>
+                <p>
+                  Elaboração das medidas e planificação da caixa, com precisão para o corte a laser do papelão e encaixe perfeito de todas as partes.
+                </p>
               </div>
+            </div>
 
-              <div class="bloco-processo">
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-book-open"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>03. MATERIAIS E ACABAMENTOS</h4>
+                <p>
+                  Forração interna em papel courino, impressão em serigrafia e aplicação de hottstamping PRATA — combinação que eleva o valor percebido da embalagem.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
                 <i class="fa-regular fa-file-lines"></i>
-                <div class="texto-processo">
-                  <h4>IMPRESSÃO</h4>
-                  <p>Arquivo finalizado para impressão offset.</p>
-                </div>
+              </div>
+              <div class="info-etapa">
+                <h4>04. PRODUÇÃO</h4>
+                <p>
+                  Acompanhamento de todo o processo produtivo na Caixa e Cia, de Sapiranga, garantindo fidelidade ao projeto e qualidade final da peça.
+                </p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="item i4">
-          <h3>PROCESSO CRIATIVO</h3>
+    <!-- MODAL PRODUTOS RODEIO -->
+    <section id="projeto-produtos-rodeio" class="projeto-modal produtos-rodeio">
+      <div class="grid-projeto">
+        <!-- ESQUERDA: Foto -->
+        <div class="proj-foto">
+          <img
+            src="imagens/Galeria/rodeio/produtos-rodeio.webp"
+            alt="Produtos-Rodeio"
+          />
+        </div>
 
-          <div class="linha-processo-criativo">
+        <!-- DIREITA: Informações -->
+        <div class="proj-info tema-verde">
+          <div class="proj-cabecalho">
+            <h2>Alfajores Triplos Rodeio</h2>
+            <p class="proj-subtitulo"> Design de Embalagem · Gráfica Celer· 2025</p>
+          </div>
+
+          <h3 class="proj-titulo-secao">PROCESSO CRIATIVO</h3>
+
+          <div class="proj-etapas">
             <div class="etapa-item">
-              <div class="circulo-etapa c-vermelho">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-lightbulb"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>01. BRIEFING</h4>
+                <p>
+                  Desenvolvimento da arte e embalagem para a linha de Alfajores Triplos da marca Rodeio, produzida pela Gráfica Celer.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-pen-to-square"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>02. IDENTIDADE VISUAL</h4>
+                <p>
+                  Criação de uma embalagem com visual rústico e acolhedor, reforçando o posicionamento artesanal e gaúcho do produto.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-book-open"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>03. DIAGRAMAÇÃO</h4>
+                <p>
+                  Composição visual com hierarquia clara — destaque para o nome do produto, sabor e informações nutricionais dentro do padrão técnico para embalagens.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-file-lines"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>04. PRODUÇÃO</h4>
+                <p>
+                  Arte finalizada e preparada para impressão offset, seguindo as especificações técnicas da Gráfica Celer para produção em larga escala.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- MODAL SITE DAIANA -->
+    <section id="projeto-site-daiana" class="projeto-modal site-daiana">
+      <div class="grid-projeto">
+        <!-- ESQUERDA: Foto -->
+        <div class="proj-foto">
+          <img
+            src="imagens/Galeria/site-daiana/site-daiana.png"
+            alt="Site Daiana"
+          />
+        </div>
+
+        <!-- DIREITA: Informações -->
+        <div class="proj-info tema-cinza ">
+          <div class="proj-cabecalho">
+            <h2>Daiana Berlitz</h2>
+            <p class="proj-subtitulo">Site Institucional · 2025</p>
+          </div>
+
+          <h3 class="proj-titulo-secao">PROCESSO CRIATIVO</h3>
+
+          <div class="proj-etapas">
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-lightbulb"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>01. BRIEFING</h4>
+                <p>
+                  Compreensão do perfil e propósito da Daiana: uma psicóloga clínica de Morro Reuter com foco em bem-estar emocional e qualidade de vida dos seus pacientes.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-pen-to-square"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>02. IDENTIDADE VISUAL</h4>
+                <p>
+                  Site desenvolvido para transmitir acolhimento e confiança, refletindo a abordagem humanizada e personalizada da profissional.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-book-open"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>03. CONTEÚDO</h4>
+                <p>
+                  Apresentação da atuação clínica baseada na terapia cognitivo-comportamental e na psicologia positiva, destacando o suporte adaptado a cada pessoa.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-file-lines"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>04. EXPERIÊNCIA DIGITAL</h4>
+                <p>
+                  Criação de uma presença digital que conecta a Daiana a novos pacientes, posicionando sua marca pessoal com profissionalismo e empatia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+ 
+          <!-- MODAL SITE UNIALCANCE -->
+    <section id="projeto-site-unialcance" class="projeto-modal site-unialcance">
+      <div class="grid-projeto">
+        <!-- ESQUERDA: Foto -->
+        <div class="proj-foto">
+          <img
+            src="imagens/Galeria/site-unialcance/site-unialcance.png"
+            alt="Agenda Unialcance"
+          />
+        </div>
+
+        <!-- DIREITA: Informações -->
+        <div class="proj-info tema-azul-claro">
+          <div class="proj-cabecalho">
+            <h2>Unialcance</h2>
+            <p class="proj-subtitulo">Site Institucional · 2025</p>
+          </div>
+
+          <h3 class="proj-titulo-secao">PROCESSO CRIATIVO</h3>
+
+          <div class="proj-etapas">
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-lightbulb"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>01. BRIEFING</h4>
+                <p>
+                  Entendimento da história e dos valores da instituição: 20 anos formando profissionais em Dois Irmãos e região, com dezenas de cursos e milhares de alunos.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-pen-to-square"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>02. IDENTIDADE VISUAL</h4>
+                <p>
+                  Site desenvolvido para refletir a seriedade e tradição da marca, reforçando a Unialcance como referência regional em cursos profissionalizantes.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-book-open"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>03. CONTEÚDO</h4>
+                <p>
+                  Apresentação dos cursos oferecidos — Informática, Beleza, Contabilidade, Auxiliar Veterinário, Administrativo e mais — com foco em atrair novos alunos.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-file-lines"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>04. EXPERIÊNCIA DIGITAL</h4>
+                <p>
+                  Criação de uma presença digital marcante que posiciona a Unialcance no meio online, valorizando sua trajetória e o impacto na vida dos alunos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+        <!-- MODAL SITE KRUG -->
+    <section id="projeto-biscoito-krug" class="projeto-modal biscoito-krug">
+      <div class="grid-projeto">
+        <!-- ESQUERDA: Foto -->
+        <div class="proj-foto">
+          <img
+            src="imagens/Galeria/krug/site-krug.png"
+            alt="Agenda Unialcance"
+          />
+        </div>
+
+        <!-- DIREITA: Informações -->
+        <div class="proj-info tema-marrom">
+          <div class="proj-cabecalho">
+            <h2>Biscoito Krug</h2>
+            <p class="proj-subtitulo">Dite Institucional · 2024</p>
+          </div>
+
+          <h3 class="proj-titulo-secao">PROCESSO CRIATIVO</h3>
+
+          <div class="proj-etapas">
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-lightbulb"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>01. BRIEFING</h4>
+                <p>
+                  Compreensão da história da marca e dos objetivos da Vivian: levar os biscoitos artesanais de Igrejinha para o mundo digital com identidade forte.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-pen-to-square"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>02. IDENTIDADE VISUAL</h4>
+                <p>
+                  O site reflete a personalidade da marca — cada sabor com sua cor, assim como as caixinhas personalizadas que são o grande diferencial do produto. 
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-book-open"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>03. CONTEÚDO</h4>
+                <p>
+                  Apresentação dos sabores artesanais — chocolate, amendoim, ervas finas, bacon, amanteigado e mais — com destaque para a variedade e o cuidado artesanal.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-file-lines"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>04. EXPERIÊNCIA DIGITAL</h4>
+                <p>
+                  Desenvolvimento de um site marcante que posiciona a Krug no meio digital, valorizando a produção caseira e a identidade visual única da marca.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    
+
+      <!-- MODAL SITE 2 -->
+    <section id="projeto-site2" class="projeto-modal site2">
+      <div class="grid-projeto">
+        <!-- ESQUERDA: Foto -->
+        <div class="proj-foto">
+          <img
+            src="imagens/Galeria/agenda/agenda-1.webp"
+            alt="Agenda Unialcance"
+          />
+        </div>
+
+        <!-- DIREITA: Informações -->
+        <div class="proj-info tema-vermelho">
+          <div class="proj-cabecalho">
+            <h2>Agenda Unialcance</h2>
+            <p class="proj-subtitulo">Design Editorial · 2024</p>
+          </div>
+
+          <h3 class="proj-titulo-secao">PROCESSO CRIATIVO</h3>
+
+          <div class="proj-etapas">
+            <div class="etapa-item">
+              <div class="circulo-etapa">
                 <i class="fa-regular fa-lightbulb"></i>
               </div>
               <div class="info-etapa">
                 <h4>01. BRIEFING</h4>
                 <p>
                   Entendimento das necessidades da instituição e dos objetivos
-                  da agenda comemorativa de 20 anos.
+                  da agenda comemorativa.
                 </p>
               </div>
             </div>
 
             <div class="etapa-item">
-              <div class="circulo-etapa c-azul">
+              <div class="circulo-etapa">
                 <i class="fa-regular fa-pen-to-square"></i>
               </div>
               <div class="info-etapa">
                 <h4>02. IDENTIDADE VISUAL</h4>
                 <p>
-                  Criação de uma composição que reforça a marca, com destaque
-                  para o vermelho institucional e elementos arquitetônicos.
+                  Composição que reforça a marca, com destaque para o vermelho
+                  institucional.
                 </p>
               </div>
             </div>
 
             <div class="etapa-item">
-              <div class="circulo-etapa c-azul">
+              <div class="circulo-etapa">
                 <i class="fa-regular fa-book-open"></i>
               </div>
               <div class="info-etapa">
                 <h4>03. FUNCIONALIDADE</h4>
                 <p>
-                  Desenvolvimento de uma agenda prática, com diagramação
-                  organizada e visual moderno para o dia a dia.
+                  Diagramação organizada e visual moderno para o uso no dia a
+                  dia.
                 </p>
               </div>
             </div>
 
             <div class="etapa-item">
-              <div class="circulo-etapa c-cinza">
+              <div class="circulo-etapa">
                 <i class="fa-regular fa-file-lines"></i>
               </div>
               <div class="info-etapa">
                 <h4>04. PRODUÇÃO</h4>
                 <p>
                   Preparação técnica do arquivo para impressão e criação de
-                  mockups realistas para apresentação do projeto.
+                  mockups.
                 </p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    
 
-        <div class="item i5">
-          <h4>PALETA DE CORES</h4>
-          <div class="paleta">
-            <div class="grupo-cor">
-              <div class="cor cor1"></div>
-              <div class="info-cor">
-                <h5>VERMELHO</h5>
-                <p class="codigo">#E30613</p>
+    <!-- MODAL AGENDA UNIALCANCE -->
+    <section id="projeto-agenda" class="projeto-modal agenda">
+      <div class="grid-projeto">
+        <!-- ESQUERDA: Foto -->
+        <div class="proj-foto">
+          <img
+            src="imagens/Galeria/agenda/agenda-1.webp"
+            alt="Agenda Unialcance"
+          />
+        </div>
+
+        <!-- DIREITA: Informações -->
+        <div class="proj-info tema-vermelho">
+          <div class="proj-cabecalho">
+            <h2>Agenda Unialcance</h2>
+            <p class="proj-subtitulo">Design Editorial · 2024</p>
+          </div>
+
+          <h3 class="proj-titulo-secao">PROCESSO CRIATIVO</h3>
+
+          <div class="proj-etapas">
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-lightbulb"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>01. BRIEFING</h4>
+                <p>
+                  Entendimento das necessidades da instituição e dos objetivos
+                  da agenda comemorativa.
+                </p>
               </div>
             </div>
 
-            <div class="grupo-cor">
-              <div class="cor cor2"></div>
-              <div class="info-cor">
-                <h5>AZUL MARINHO</h5>
-                <p class="codigo">#0F2341</p>
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-pen-to-square"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>02. IDENTIDADE VISUAL</h4>
+                <p>
+                  Composição que reforça a marca, com destaque para o vermelho
+                  institucional.
+                </p>
               </div>
             </div>
 
-            <div class="grupo-cor">
-              <div class="cor cor3"></div>
-              <div class="info-cor">
-                <h5>BRANCO</h5>
-                <p class="codigo">#E30613</p>
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-book-open"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>03. FUNCIONALIDADE</h4>
+                <p>
+                  Diagramação organizada e visual moderno para o uso no dia a
+                  dia.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-file-lines"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>04. PRODUÇÃO</h4>
+                <p>
+                  Preparação técnica do arquivo para impressão e criação de
+                  mockups.
+                </p>
               </div>
             </div>
           </div>
