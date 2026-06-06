@@ -1,7 +1,7 @@
 const cards = document.querySelectorAll('.card');
 const modal = document.getElementById('modal');
 const modalBody = document.getElementById('modal-body');
-const fechar = document.querySelector('.fechar');
+const fechar = document.querySelector('#modal .fechar');
 
 cards.forEach(card => {
   card.addEventListener('click', () => {

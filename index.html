@@ -42,6 +42,86 @@
   <body>
     <div class="fundo-mobile"></div>
     <div class="bg"></div>
+
+    <div class="modal" id="modal-servicos">
+  <div class="modal-content modal-servicos-content">
+    <span class="fechar" id="fechar-servicos">&times;</span>
+
+    <div class="serv-header">
+      <h2>Sites & Presença Digital</h2>
+      <p>Crio a presença digital da sua empresa com design exclusivo e identidade que comunica.</p>
+      <div class="badge-lancamento">
+        <i class="fa-solid fa-tag"></i> Preços de lançamento — válidos por tempo limitado
+      </div>
+    </div>
+
+    <div class="serv-body">
+      <div class="serv-cards-grid">
+
+        <div class="serv-card">
+          <i class="fa-solid fa-rocket"></i>
+          <h3>Landing Page</h3>
+          <p>Página de conversão focada em resultado, ideal para lançamentos e campanhas.</p>
+          <div class="serv-preco">R$ 380 <span>/ projeto</span></div>
+          <div class="serv-card-tags">
+            <div class="mini-tag"><i class="fa-solid fa-circle-check"></i> Sem mensalidade</div>
+            <div class="mini-tag"><i class="fa-solid fa-credit-card"></i> Parcele em até 3x</div>
+          </div>
+        </div>
+
+        <div class="serv-card serv-card-destaque">
+          <i class="fa-solid fa-building"></i>
+          <h3>Site Institucional</h3>
+          <p>Site completo com múltiplas páginas, identidade visual e domínio incluso.</p>
+          <div class="serv-preco">R$ 700 <span>/ projeto</span></div>
+          <div class="serv-card-tags">
+            <div class="mini-tag"><i class="fa-solid fa-circle-check"></i> Sem mensalidade</div>
+            <div class="mini-tag"><i class="fa-solid fa-credit-card"></i> Parcele em até 3x</div>
+            <div class="mini-tag"><i class="fa-solid fa-globe"></i> Domínio incluso</div>
+          </div>
+        </div>
+
+        <div class="serv-card">
+          <i class="fa-solid fa-pencil"></i>
+          <h3>Blog</h3>
+          <p>Plataforma de conteúdo com design personalizado e fácil de administrar.</p>
+          <div class="serv-preco">R$ 480 <span>/ projeto</span></div>
+          <div class="serv-card-tags">
+            <div class="mini-tag"><i class="fa-solid fa-circle-check"></i> Sem mensalidade</div>
+            <div class="mini-tag"><i class="fa-solid fa-credit-card"></i> Parcele em até 3x</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="serv-hospedagem">
+        <div class="serv-hosp-top">
+          <i class="fa-solid fa-server"></i>
+          <div>
+            <p>Hospedagem via Hostinger</p>
+            <span>Contratada e gerenciada por mim para você</span>
+          </div>
+          <div class="serv-preco-host">
+            <strong>R$ 300</strong>
+            <small>renovação anual · domínio incluso</small>
+          </div>
+        </div>
+        <div class="serv-hosp-tags">
+          <div class="serv-tag"><i class="fa-solid fa-lock"></i> SSL incluso</div>
+          <div class="serv-tag"><i class="fa-solid fa-shield-halved"></i> Site seguro (https)</div>
+          <div class="serv-tag"><i class="fa-solid fa-headset"></i> Suporte direto comigo</div>
+          <div class="serv-tag"><i class="fa-solid fa-bolt"></i> Servidor rápido</div>
+          <div class="serv-tag serv-tag-destaque"><i class="fa-solid fa-circle-check"></i> Sem mensalidade</div>
+        </div>
+      </div>
+
+      <button class="serv-btn-cta">
+        <i class="fa-brands fa-whatsapp"></i> Solicitar orçamento
+      </button>
+    </div>
+  </div>
+</div>
+
     <main class="conteudo">
       <header class="header">
         <nav class="menu">
@@ -78,6 +158,9 @@
       <section class="hero">
         <h1 id="titulo" class="titulo">Luís R. Silva</h1>
         <p id="subtitulo" class="cargo">Designer Gráfico e Web</p>
+        <button class="btn-servicos" id="btn-servicos">
+          <i class="fa-solid fa-globe"></i> Precisa de um site?
+        </button>
         <div class="social social-hero-mobile">
           <i class="fa-brands fa-whatsapp"></i>
           <i class="fa-brands fa-instagram"></i>
@@ -96,6 +179,21 @@
           com foco em comunicação clara e design funciona
         </p>
         <div class="divisor"></div>
+
+        <div class="sites-desenvolvidos">
+  <h3 class="sites-titulo">Sites que desenvolvi</h3>
+  <div class="sites-grid">
+
+    <a href="URL_DO_SITE_KRUG" target="_blank" class="site-card">
+      <img src="imagens/logos/clientes/krug.png" alt="Biscoito Krug" />
+    </a>
+
+    <a href="URL_DO_SITE_DAIANA" target="_blank" class="site-card">
+      <img src="imagens/logos/clientes/daiana.png" alt="Daiana Psicóloga" />
+    </a>
+
+  </div>
+</div>
 
         <!-- FORMULARIO -->
         <div class="painel-conteudo">
@@ -128,16 +226,37 @@
       <section class="secao painel" id="portfolio">
         <div class="painel-conteudo painel-portfolio">
           <div class="grid">
-
-            <div class="card biscoito-krug" data-id="biscoito-krug" data-numero="01">
-              <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover">
-                <source src="imagens/Galeria/krug/krug-3.mp4" type="video/mp4"/> Seu navegador não suporta vídeos.
+            <div
+              class="card biscoito-krug"
+              data-id="biscoito-krug"
+              data-numero="01"
+            >
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                style="width: 100%; height: 100%; object-fit: cover"
+              >
+                <source
+                  src="imagens/Galeria/krug/krug-3.mp4"
+                  type="video/mp4"
+                />
+                Seu navegador não suporta vídeos.
               </video>
             </div>
 
-            <div class="card logo" data-id="logo" data-numero="02"></div>
+            <div
+              class="card logo"
+              data-id="logo-unialcance"
+              data-numero="02"
+            ></div>
 
-            <div class="card site-unialcance" data-id="site-unialcance" data-numero="03">
+            <div
+              class="card site-unialcance"
+              data-id="site-unialcance"
+              data-numero="03"
+            >
               <video
                 autoplay
                 loop
@@ -151,20 +270,47 @@
                 />
                 Seu navegador não suporta vídeos.
               </video>
-
             </div>
-            <div class="card alto embalagem projeto-produtos-rodeio" data-id="produtos-rodeio" data-numero="04"></div>
+            <div
+              class="card alto embalagem projeto-produtos-rodeio"
+              data-id="produtos-rodeio"
+              data-numero="04"
+            ></div>
 
-            <div class="card casinha casinha-presente" data-id="casinha-presente" data-numero="05"></div>
-            
-            <div class="card alto landing" data-numero="06"></div>
+            <div
+              class="card casinha-presente"
+              data-id="casinha-presente"
+              data-numero="05"
+            >
+              <img
+                src="imagens/Galeria/casinha-cia/casinha-presente.png"
+                alt="Casinha Presente"
+                class="slide-casinha ativo"
+              />
+              <img
+                src="imagens/Galeria/casinha-cia/casinha-presente3.png  "
+                alt="Casinha Presente aberta"
+                class="slide-casinha"
+              />
+            </div>
+
+            <div
+              class="card alto landing projeto-emb-panvel"
+              data-id="emb-panvel"
+              data-numero="06"
+            ></div>
+
             <div
               class="card sete agenda"
               data-id="agenda"
               data-numero="07"
             ></div>
 
-            <div class="card oito site-daiana" data-id="site-daiana" data-numero="08">
+            <div
+              class="card oito site-daiana"
+              data-id="site-daiana"
+              data-numero="08"
+            >
               <video
                 autoplay
                 loop
@@ -188,8 +334,178 @@
       <p>Todos Direitos reservados &copy; 2026</p>
     </footer>
 
+    <!-- MODAL EMBALAGEM PANVEL -->
+    <section id="projeto-emb-panvel" class="projeto-modal emb-panvel">
+      <div class="grid-projeto">
+        <!-- ESQUERDA: Foto -->
+        <div class="proj-foto">
+          <img
+            src="imagens/Galeria/embalagem-panvel/emb-panvel-2.png"
+            alt="casinha-presente"
+          />
+        </div>
+
+        <!-- DIREITA: Informações -->
+        <div class="proj-info tema-musgo">
+          <div class="proj-cabecalho">
+            <h2>Design de Embalagem · Grafdil, Dois Irmãos</h2>
+            <p class="proj-subtitulo">Grafdil, Dois Irmãos</p>
+          </div>
+
+          <h3 class="proj-titulo-secao">PROCESSO CRIATIVO</h3>
+
+          <div class="proj-etapas">
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-lightbulb"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>01. BRIEFING</h4>
+                <p>
+                  Desenvolvimento de embalagem para a linha Vert da Panvel, com
+                  proposta visual que traduzisse a origem natural dos
+                  ingredientes e o posicionamento premium da marca.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-pen-to-square"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>02. CONCEITO E ESTRUTRA</h4>
+                <p>
+                  A ideia da embalagem partiu do desenvolvimento técnico e
+                  estrutural — formato, volume e experiência de abertura. A arte
+                  gráfica foi executada por agência parceira, compondo junto à
+                  estrutura uma peça visualmente sofisticada.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-book-open"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>03. ACABAMENTO</h4>
+                <p>
+                  Projeto de embalagem cartonada com formato diferenciado e
+                  elementos tridimensionais, garantindo destaque no ponto de
+                  venda e sofisticação na experiência de unboxing.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-file-lines"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>04. RECONHECIMENTO</h4>
+                <p>
+                  A embalagem concorreu na categoria de melhor embalagem gaúcha,
+                  conquistando o Prêmio Destaque Gaúcho — reconhecimento que
+                  validou a qualidade do projeto desenvolvido na Grafdil por
+                  volta de 2014.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL LOGO UNIALCANCE -->
+    <section id="projeto-logo-unialcance" class="projeto-modal logo-unialcance">
+      <div class="grid-projeto">
+        <!-- ESQUERDA: Foto -->
+        <div class="proj-foto">
+          <img
+            src="imagens/Galeria/logo-unialcance/logo-unialcance.png"
+            alt="casinha-presente"
+          />
+        </div>
+
+        <!-- DIREITA: Informações -->
+        <div class="proj-info tema-vermelho">
+          <div class="proj-cabecalho">
+            <h2>Unialcance Identidade Visual</h2>
+            <p class="proj-subtitulo">Escola de Cursos Profissionalizantes</p>
+          </div>
+
+          <h3 class="proj-titulo-secao">PROCESSO CRIATIVO</h3>
+
+          <div class="proj-etapas">
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-lightbulb"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>01. BRIEFING</h4>
+                <p>
+                  O Sr. Márcio, fundador da escola, trouxe apenas um nome —
+                  Unialcance — e a missão de criar uma identidade que traduzisse
+                  o propósito da instituição: levar pessoas além dos seus
+                  limites.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-pen-to-square"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>02. CONCEITO</h4>
+                <p>
+                  A marca precisava transmitir movimento, conquista e superação.
+                  O símbolo foi desenvolvido para remeter à ideia de alcance,
+                  sucesso e evolução — valores centrais de uma escola
+                  profissionalizante.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-book-open"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>03. TIPOGRAFIA E SÍMBOLO</h4>
+                <p>
+                  A tipografia foi escolhida para equilibrar modernidade e
+                  acessibilidade, enquanto o símbolo cria uma figura em
+                  movimento ascendente, reforçando a mensagem de crescimento e
+                  realização.
+                </p>
+              </div>
+            </div>
+
+            <div class="etapa-item">
+              <div class="circulo-etapa">
+                <i class="fa-regular fa-file-lines"></i>
+              </div>
+              <div class="info-etapa">
+                <h4>04. RESULTADO</h4>
+                <p>
+                  Uma identidade visual completa, criada do zero em 2006, que
+                  deu vida à escola e acompanhou sua missão de transformar
+                  trajetórias profissionais.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- MODAL CASINHA PRESENTE -->
-    <section id="projeto-casinha-presente" class="projeto-modal casinha-presente">
+    <section
+      id="projeto-casinha-presente"
+      class="projeto-modal casinha-presente"
+    >
       <div class="grid-projeto">
         <!-- ESQUERDA: Foto -->
         <div class="proj-foto">
@@ -203,7 +519,9 @@
         <div class="proj-info tema-cyan">
           <div class="proj-cabecalho">
             <h2>Casinha Presente</h2>
-            <p class="proj-subtitulo"> Design de Embalagem Cartonada · Caixa e Cia</p>
+            <p class="proj-subtitulo">
+              Design de Embalagem Cartonada · Caixa e Cia
+            </p>
           </div>
 
           <h3 class="proj-titulo-secao">PROCESSO CRIATIVO</h3>
@@ -216,7 +534,9 @@
               <div class="info-etapa">
                 <h4>01. BRIEFING</h4>
                 <p>
-                  Desenvolvimento de embalagem cartonada personalizada, com projeto técnico completo e acabamentos nobres para presentear com sofisticação.
+                  Desenvolvimento de embalagem cartonada personalizada, com
+                  projeto técnico completo e acabamentos nobres para presentear
+                  com sofisticação.
                 </p>
               </div>
             </div>
@@ -228,7 +548,9 @@
               <div class="info-etapa">
                 <h4>02. DESENHO TÉCNICO</h4>
                 <p>
-                  Elaboração das medidas e planificação da caixa, com precisão para o corte a laser do papelão e encaixe perfeito de todas as partes.
+                  Elaboração das medidas e planificação da caixa, com precisão
+                  para o corte a laser do papelão e encaixe perfeito de todas as
+                  partes.
                 </p>
               </div>
             </div>
@@ -240,7 +562,9 @@
               <div class="info-etapa">
                 <h4>03. MATERIAIS E ACABAMENTOS</h4>
                 <p>
-                  Forração interna em papel courino, impressão em serigrafia e aplicação de hottstamping PRATA — combinação que eleva o valor percebido da embalagem.
+                  Forração interna em papel courino, impressão em serigrafia e
+                  aplicação de hottstamping PRATA — combinação que eleva o valor
+                  percebido da embalagem.
                 </p>
               </div>
             </div>
@@ -252,7 +576,9 @@
               <div class="info-etapa">
                 <h4>04. PRODUÇÃO</h4>
                 <p>
-                  Acompanhamento de todo o processo produtivo na Caixa e Cia, de Sapiranga, garantindo fidelidade ao projeto e qualidade final da peça.
+                  Acompanhamento de todo o processo produtivo na Caixa e Cia, de
+                  Sapiranga, garantindo fidelidade ao projeto e qualidade final
+                  da peça.
                 </p>
               </div>
             </div>
@@ -276,7 +602,9 @@
         <div class="proj-info tema-verde">
           <div class="proj-cabecalho">
             <h2>Alfajores Triplos Rodeio</h2>
-            <p class="proj-subtitulo"> Design de Embalagem · Gráfica Celer· 2025</p>
+            <p class="proj-subtitulo">
+              Design de Embalagem · Gráfica Celer· 2025
+            </p>
           </div>
 
           <h3 class="proj-titulo-secao">PROCESSO CRIATIVO</h3>
@@ -289,7 +617,8 @@
               <div class="info-etapa">
                 <h4>01. BRIEFING</h4>
                 <p>
-                  Desenvolvimento da arte e embalagem para a linha de Alfajores Triplos da marca Rodeio, produzida pela Gráfica Celer.
+                  Desenvolvimento da arte e embalagem para a linha de Alfajores
+                  Triplos da marca Rodeio, produzida pela Gráfica Celer.
                 </p>
               </div>
             </div>
@@ -301,7 +630,8 @@
               <div class="info-etapa">
                 <h4>02. IDENTIDADE VISUAL</h4>
                 <p>
-                  Criação de uma embalagem com visual rústico e acolhedor, reforçando o posicionamento artesanal e gaúcho do produto.
+                  Criação de uma embalagem com visual rústico e acolhedor,
+                  reforçando o posicionamento artesanal e gaúcho do produto.
                 </p>
               </div>
             </div>
@@ -313,7 +643,9 @@
               <div class="info-etapa">
                 <h4>03. DIAGRAMAÇÃO</h4>
                 <p>
-                  Composição visual com hierarquia clara — destaque para o nome do produto, sabor e informações nutricionais dentro do padrão técnico para embalagens.
+                  Composição visual com hierarquia clara — destaque para o nome
+                  do produto, sabor e informações nutricionais dentro do padrão
+                  técnico para embalagens.
                 </p>
               </div>
             </div>
@@ -325,7 +657,9 @@
               <div class="info-etapa">
                 <h4>04. PRODUÇÃO</h4>
                 <p>
-                  Arte finalizada e preparada para impressão offset, seguindo as especificações técnicas da Gráfica Celer para produção em larga escala.
+                  Arte finalizada e preparada para impressão offset, seguindo as
+                  especificações técnicas da Gráfica Celer para produção em
+                  larga escala.
                 </p>
               </div>
             </div>
@@ -334,7 +668,7 @@
       </div>
     </section>
 
-     <!-- MODAL SITE DAIANA -->
+    <!-- MODAL SITE DAIANA -->
     <section id="projeto-site-daiana" class="projeto-modal site-daiana">
       <div class="grid-projeto">
         <!-- ESQUERDA: Foto -->
@@ -346,7 +680,7 @@
         </div>
 
         <!-- DIREITA: Informações -->
-        <div class="proj-info tema-cinza ">
+        <div class="proj-info tema-cinza">
           <div class="proj-cabecalho">
             <h2>Daiana Berlitz</h2>
             <p class="proj-subtitulo">Site Institucional · 2025</p>
@@ -362,7 +696,9 @@
               <div class="info-etapa">
                 <h4>01. BRIEFING</h4>
                 <p>
-                  Compreensão do perfil e propósito da Daiana: uma psicóloga clínica de Morro Reuter com foco em bem-estar emocional e qualidade de vida dos seus pacientes.
+                  Compreensão do perfil e propósito da Daiana: uma psicóloga
+                  clínica de Morro Reuter com foco em bem-estar emocional e
+                  qualidade de vida dos seus pacientes.
                 </p>
               </div>
             </div>
@@ -374,7 +710,9 @@
               <div class="info-etapa">
                 <h4>02. IDENTIDADE VISUAL</h4>
                 <p>
-                  Site desenvolvido para transmitir acolhimento e confiança, refletindo a abordagem humanizada e personalizada da profissional.
+                  Site desenvolvido para transmitir acolhimento e confiança,
+                  refletindo a abordagem humanizada e personalizada da
+                  profissional.
                 </p>
               </div>
             </div>
@@ -386,7 +724,9 @@
               <div class="info-etapa">
                 <h4>03. CONTEÚDO</h4>
                 <p>
-                  Apresentação da atuação clínica baseada na terapia cognitivo-comportamental e na psicologia positiva, destacando o suporte adaptado a cada pessoa.
+                  Apresentação da atuação clínica baseada na terapia
+                  cognitivo-comportamental e na psicologia positiva, destacando
+                  o suporte adaptado a cada pessoa.
                 </p>
               </div>
             </div>
@@ -398,7 +738,9 @@
               <div class="info-etapa">
                 <h4>04. EXPERIÊNCIA DIGITAL</h4>
                 <p>
-                  Criação de uma presença digital que conecta a Daiana a novos pacientes, posicionando sua marca pessoal com profissionalismo e empatia.
+                  Criação de uma presença digital que conecta a Daiana a novos
+                  pacientes, posicionando sua marca pessoal com profissionalismo
+                  e empatia.
                 </p>
               </div>
             </div>
@@ -407,9 +749,7 @@
       </div>
     </section>
 
-
- 
-          <!-- MODAL SITE UNIALCANCE -->
+    <!-- MODAL SITE UNIALCANCE -->
     <section id="projeto-site-unialcance" class="projeto-modal site-unialcance">
       <div class="grid-projeto">
         <!-- ESQUERDA: Foto -->
@@ -437,7 +777,9 @@
               <div class="info-etapa">
                 <h4>01. BRIEFING</h4>
                 <p>
-                  Entendimento da história e dos valores da instituição: 20 anos formando profissionais em Dois Irmãos e região, com dezenas de cursos e milhares de alunos.
+                  Entendimento da história e dos valores da instituição: 20 anos
+                  formando profissionais em Dois Irmãos e região, com dezenas de
+                  cursos e milhares de alunos.
                 </p>
               </div>
             </div>
@@ -449,7 +791,9 @@
               <div class="info-etapa">
                 <h4>02. IDENTIDADE VISUAL</h4>
                 <p>
-                  Site desenvolvido para refletir a seriedade e tradição da marca, reforçando a Unialcance como referência regional em cursos profissionalizantes.
+                  Site desenvolvido para refletir a seriedade e tradição da
+                  marca, reforçando a Unialcance como referência regional em
+                  cursos profissionalizantes.
                 </p>
               </div>
             </div>
@@ -461,7 +805,9 @@
               <div class="info-etapa">
                 <h4>03. CONTEÚDO</h4>
                 <p>
-                  Apresentação dos cursos oferecidos — Informática, Beleza, Contabilidade, Auxiliar Veterinário, Administrativo e mais — com foco em atrair novos alunos.
+                  Apresentação dos cursos oferecidos — Informática, Beleza,
+                  Contabilidade, Auxiliar Veterinário, Administrativo e mais —
+                  com foco em atrair novos alunos.
                 </p>
               </div>
             </div>
@@ -473,7 +819,9 @@
               <div class="info-etapa">
                 <h4>04. EXPERIÊNCIA DIGITAL</h4>
                 <p>
-                  Criação de uma presença digital marcante que posiciona a Unialcance no meio online, valorizando sua trajetória e o impacto na vida dos alunos.
+                  Criação de uma presença digital marcante que posiciona a
+                  Unialcance no meio online, valorizando sua trajetória e o
+                  impacto na vida dos alunos.
                 </p>
               </div>
             </div>
@@ -482,8 +830,7 @@
       </div>
     </section>
 
-    
-        <!-- MODAL SITE KRUG -->
+    <!-- MODAL SITE KRUG -->
     <section id="projeto-biscoito-krug" class="projeto-modal biscoito-krug">
       <div class="grid-projeto">
         <!-- ESQUERDA: Foto -->
@@ -511,7 +858,9 @@
               <div class="info-etapa">
                 <h4>01. BRIEFING</h4>
                 <p>
-                  Compreensão da história da marca e dos objetivos da Vivian: levar os biscoitos artesanais de Igrejinha para o mundo digital com identidade forte.
+                  Compreensão da história da marca e dos objetivos da Vivian:
+                  levar os biscoitos artesanais de Igrejinha para o mundo
+                  digital com identidade forte.
                 </p>
               </div>
             </div>
@@ -523,7 +872,9 @@
               <div class="info-etapa">
                 <h4>02. IDENTIDADE VISUAL</h4>
                 <p>
-                  O site reflete a personalidade da marca — cada sabor com sua cor, assim como as caixinhas personalizadas que são o grande diferencial do produto. 
+                  O site reflete a personalidade da marca — cada sabor com sua
+                  cor, assim como as caixinhas personalizadas que são o grande
+                  diferencial do produto.
                 </p>
               </div>
             </div>
@@ -535,7 +886,9 @@
               <div class="info-etapa">
                 <h4>03. CONTEÚDO</h4>
                 <p>
-                  Apresentação dos sabores artesanais — chocolate, amendoim, ervas finas, bacon, amanteigado e mais — com destaque para a variedade e o cuidado artesanal.
+                  Apresentação dos sabores artesanais — chocolate, amendoim,
+                  ervas finas, bacon, amanteigado e mais — com destaque para a
+                  variedade e o cuidado artesanal.
                 </p>
               </div>
             </div>
@@ -547,7 +900,9 @@
               <div class="info-etapa">
                 <h4>04. EXPERIÊNCIA DIGITAL</h4>
                 <p>
-                  Desenvolvimento de um site marcante que posiciona a Krug no meio digital, valorizando a produção caseira e a identidade visual única da marca.
+                  Desenvolvimento de um site marcante que posiciona a Krug no
+                  meio digital, valorizando a produção caseira e a identidade
+                  visual única da marca.
                 </p>
               </div>
             </div>
@@ -555,11 +910,8 @@
         </div>
       </div>
     </section>
-    
 
-    
-
-      <!-- MODAL SITE 2 -->
+    <!-- MODAL SITE 2 -->
     <section id="projeto-site2" class="projeto-modal site2">
       <div class="grid-projeto">
         <!-- ESQUERDA: Foto -->
@@ -635,7 +987,6 @@
         </div>
       </div>
     </section>
-    
 
     <!-- MODAL AGENDA UNIALCANCE -->
     <section id="projeto-agenda" class="projeto-modal agenda">

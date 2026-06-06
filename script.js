@@ -81,3 +81,34 @@ document.querySelectorAll('.nav_bar a').forEach(link => {
         navLinks.classList.remove('ativo');
     });
 });
+
+
+// animação casinha presente
+const slides = document.querySelectorAll('.slide-casinha');
+let atual = 0;
+
+setInterval(() => {
+  slides[atual].classList.remove('ativo');
+  atual = (atual + 1) % slides.length;
+  slides[atual].classList.add('ativo');
+}, 3000);
+
+
+// preços
+const btnServicos = document.getElementById('btn-servicos');
+const modalServicos = document.getElementById('modal-servicos');
+const fecharServicos = document.getElementById('fechar-servicos');
+
+btnServicos.addEventListener('click', () => {
+  modalServicos.style.display = 'flex';
+});
+
+fecharServicos.addEventListener('click', () => {
+  modalServicos.style.display = 'none';
+});
+
+modalServicos.addEventListener('click', (e) => {
+  if (e.target === modalServicos) {
+    modalServicos.style.display = 'none';
+  }
+});

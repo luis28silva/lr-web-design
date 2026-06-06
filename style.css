@@ -56,8 +56,6 @@ body {
   z-index: 10;
 }
 
-
-
 .menu {
   display: flex;
   justify-content: space-between;
@@ -299,19 +297,35 @@ body {
   background-image: url(imagens/Galeria/krug/krug-1.mp4);
 }
 .logo {
-  background-image: url(imagens/Galeria/logo-unialcance/logo-unialcance.png);
+  background-image: url(imagens/Galeria/logo-unialcance/logo-unialcance-branco.png);
 }
 .site_2 {
   background-image: url(imagens/Galeria/site1.gif);
 }
-.casinha {
-  background-image: url(imagens/Galeria/casinha-cia/casinha-presente.png);
+.casinha-presente {
+  position: relative;
+  overflow: hidden;
+}
+
+.casinha-presente .slide-casinha {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.casinha-presente .slide-casinha.ativo {
+  opacity: 1;
 }
 .site_4 {
   background-image: url(imagens/Galeria/site4.jpg);
 }
 .landing {
-  background-image: url(imagens/Galeria/site5.jpg);
+  background-image: url(imagens/Galeria/embalagem-panvel/emb-panvel-2.png);
 }
 .embalagem {
   background-image: url(imagens/Galeria/rodeio/rodeio.webp);
@@ -325,6 +339,247 @@ footer {
   padding: 20px;
   text-align: center;
   background: #4478ff;
+}
+
+.badge-lancamento {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(68, 120, 255, 0.15);
+  border: 0.5px solid #4478ff88;
+  color: #4478ff;
+  font-size: 11px;
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin-top: 8px;
+}
+.modal-servicos-content {
+  background: #0a1628;
+  border-radius: 16px;
+  border: 0.5px solid #1e3a5f;
+  padding: 0;
+  overflow: hidden;
+}
+.serv-header {
+  background: #0d1f3c;
+  padding: 1.5rem 1.75rem 1rem;
+  border-bottom: 0.5px solid #1e3a5f;
+}
+.serv-header h2 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 4px;
+}
+.serv-header p {
+  color: #7aa8d8;
+  font-size: 14px;
+  margin: 0;
+  font-style: italic;
+}
+.serv-body {
+  padding: 1.5rem 1.75rem;
+}
+.serv-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+.serv-card {
+  background: #0d1f3c;
+  border: 0.5px solid #1e3a5f;
+  border-radius: 16px;
+  padding: 1.1rem;
+}
+.serv-card-destaque {
+  border-color: #4478ff66;
+}
+.serv-card i {
+  font-size: 30px;
+  color: #4478ff;
+  margin-bottom: 10px;
+  display: block;
+}
+.serv-card h3 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 6px;
+}
+.serv-card p {
+  color: #7aa8d8;
+  font-size: 12px;
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+.serv-preco {
+  color: #4478ff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.serv-preco span {
+  font-size: 12px;
+  color: #7aa8d8;
+  font-weight: 400;
+}
+.serv-card-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+}
+.mini-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  color: #7aa8d8;
+  padding: 2px 0;
+}
+.mini-tag i {
+  font-size: 12px;
+  color: #4478ff;
+}
+.serv-hospedagem {
+  background: #0d1f3c;
+  border: 0.5px solid #1e3a5f;
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.serv-hosp-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.serv-hosp-top > i {
+  font-size: 28px;
+  color: #4478ff;
+}
+.serv-hosp-top div p {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.serv-hosp-top div span {
+  font-size: 12px;
+  color: #7aa8d8;
+}
+.serv-preco-host {
+  margin-left: auto;
+  text-align: right;
+}
+.serv-preco-host strong {
+  display: block;
+  color: #4478ff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.serv-preco-host small {
+  color: #7aa8d8;
+  font-size: 11px;
+}
+.serv-hosp-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  border-top: 0.5px solid #1e3a5f;
+  padding-top: 10px;
+}
+.serv-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #0a1628;
+  border: 0.5px solid #1e3a5f;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: #7aa8d8;
+}
+.serv-tag i {
+  font-size: 15px;
+  color: #4478ff;
+}
+.serv-tag-destaque {
+  border-color: #4478ff66;
+  color: #4478ff;
+  background: rgba(68, 120, 255, 0.08);
+}
+.serv-btn-cta {
+  width: 100%;
+  background: #4478ff;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 0.9rem;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 0 20px rgba(68, 120, 255, 0.35);
+}
+.serv-btn-cta i {
+  font-size: 20px;
+}
+.btn-servicos {
+  margin-top: 1.5rem;
+  background: transparent;
+  border: 1px solid #4478ff;
+  color: #4478ff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 0 14px rgba(68, 120, 255, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-servicos:hover {
+  background: #4478ff;
+  color: #fff;
+}
+
+/* --- SITES Q EU DESENVOLVI --- */
+
+.sites-desenvolvidos {
+  margin-top: 2rem;
+  text-align: center;
+}
+.sites-titulo {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #7aa8d8;
+  margin-bottom: 1.2rem;
+}
+.sites-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.site-card {
+  opacity: 0.6;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+.site-card:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.site-card img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 /* --- RESPONSIVO --- */
