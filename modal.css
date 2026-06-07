@@ -32,7 +32,23 @@
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 22px;
+  font-size: var(--fonte-texto);
   cursor: pointer;
+  font-family: "Newsreader", serif;
+  font-style: italic;
+  color: var(--cor-branco);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 0.3s ease;
 }
 
+.fechar::before {
+  content: "←";
+  font-style: normal;
+}
+
+.fechar:hover {
+  opacity: 0.7;
+}

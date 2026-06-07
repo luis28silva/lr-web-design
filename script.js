@@ -32,7 +32,7 @@ function ativarSecao(id) {
         titulo.textContent = 'Meu Trabalho';
         subtitulo.textContent = 'Impresso e Digital';
     } else {
-        titulo.textContent = 'Luís R. Silva';
+        titulo.textContent = 'Luís R. da Silva';
         subtitulo.textContent = 'Designer Gráfico & Web';
     }
 }

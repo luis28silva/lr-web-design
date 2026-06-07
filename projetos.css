@@ -26,23 +26,23 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  color: #ffffff;
+  color: var(--cor-branco);
 }
 
 .proj-cabecalho h2 {
-  font-size: 22px;
+  font-size: var(--fonte-subtitulo);
   font-weight: normal;
   margin: 0 0 6px 0;
 }
 
 .proj-subtitulo {
-  font-size: 13px;
+  font-size: var(--fonte-pequena);
   opacity: 0.6;
   margin: 0;
 }
 
 .proj-titulo-secao {
-  font-size: 13px;
+  font-size: var(--fonte-pequena);
   font-weight: normal;
   letter-spacing: 2px;
   border-bottom: 2px solid rgba(255,255,255,0.3);
@@ -78,22 +78,22 @@
 
 .circulo-etapa i {
   font-size: 16px;
-  color: #ffffff;
+  color: var(--cor-branco);
   font-weight: 400 !important;
   -webkit-font-smoothing: antialiased;
 }
 
 .info-etapa h4 {
-  font-size: 13px;
+  font-size: var(--fonte-pequena);
   font-weight: normal;
   letter-spacing: 0.5px;
   margin: 0 0 4px 0;
 }
 
 .info-etapa p {
-  font-size: 12px;
+  font-size: var(--fonte-pequena);
   line-height: 1.5;
-  margin: 0;
+  margin: 0;  
   opacity: 0.75;
 }
 
@@ -104,7 +104,7 @@
 .tema-azul       { background-color: #0F2341; }
 .tema-verde      { background-color: #176604 }
 .tema-cyan       { background-color: #4b81a0; }
-.tema-musgo    { background-color: #3c361e; }
+.tema-musgo      { background-color: #3c361e; }
 .tema-cinza      { background-color: #2e2e2e; }
 .tema-azul-claro { background-color: #45a5fa; }
 .tema-marrom     { background-color: #3b2413; }
