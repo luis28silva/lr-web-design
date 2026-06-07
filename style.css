@@ -45,6 +45,12 @@ body {
 .social-desktop {
   display: flex !important;
 }
+
+.social-desktop a {
+  position: relative;
+  z-index: 100;
+  cursor: pointer;
+}
 /* FUNDO FIXO */
 /* FUNDO FIXO CORRIGIDO */
 .bg {
@@ -72,7 +78,8 @@ body {
 .header {
   padding-top: 20px;
   width: 100%;
-  z-index: 10;
+  position: relative;
+  z-index: 50;
 }
 
 .menu {
@@ -619,7 +626,6 @@ footer {
   .social i,
   .logo_menu img {
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
   }
 
   .social-desktop {
@@ -891,4 +897,45 @@ footer {
   .card {
     height: 250px;
   }
+
+
+    /* MODAL SERVIÇOS - MOBILE */
+  #modal-servicos {
+    align-items: flex-end !important;
+    padding: 0 !important;
+  }
+
+  .modal-servicos-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 0;
+  }
+
+  .serv-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+  }
+
+  .serv-body {
+    padding: 1rem !important;
+  }
+
+  .serv-header {
+    padding: 1.2rem 1rem 0.8rem !important;
+  }
+
+  .serv-hosp-top {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .serv-preco-host {
+    margin-left: 0;
+    text-align: left;
+    width: 100%;
+  }
+
 } /* <--- ESTA CHAVE FECHA O @MEDIA MOBILE E ESTAVA FALTANDO NO FIM! */
+

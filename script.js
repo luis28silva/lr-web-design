@@ -1,4 +1,4 @@
-const links = document.querySelectorAll('.menu a');
+const links = document.querySelectorAll('.menu a[data-section]');
 const secoes = document.querySelectorAll('.secao');
 const titulo = document.getElementById('titulo');
 const subtitulo = document.getElementById('subtitulo');
